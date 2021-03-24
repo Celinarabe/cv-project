@@ -8,6 +8,10 @@ export class App extends Component {
     this.state = {
       fname: "",
       lname: "",
+      university: "",
+      graduationDate: "",
+      companyName: "",
+      role: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,8 +35,8 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Edit fname={this.state.fname} lname={this.state.lname} onChange={e => (this.handleChange(e))} />
-        <Preview fname={this.state.fname} lname={this.state.lname} />
+        <Edit {...this.state} onChange={e => (this.handleChange(e))} />
+        <Preview {...this.state} />
       </div>
     );
   }
