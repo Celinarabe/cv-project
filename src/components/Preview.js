@@ -1,6 +1,9 @@
 function Preview(props) {
   return(
-    <h1>{props.fname} {props.lname}</h1>
+    <div>
+    <h1>Preview</h1>
+    <h3>{props.fname} {props.lname}</h3>
+    </div>
 
   )
 }
