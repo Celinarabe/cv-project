@@ -11,26 +11,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Card className="mb-3"style={{ color: "aqua" }}>
-    
-      <Card.Body>
-        <Card.Title>
-          Card Example
-        </Card.Title>
-        <Card.Text>
-          This is an example of a bootstrap card yo
-        </Card.Text>
-        <Button variant="primary">Read More</Button>
-      </Card.Body>
-    </Card>
-    <Breadcrumb>
-    <Breadcrumb.Item>Test</Breadcrumb.Item>
-    <Breadcrumb.Item>Test2</Breadcrumb.Item>
-    <Breadcrumb.Item active>Test3</Breadcrumb.Item>
-    </Breadcrumb>
     <App />
-    <Button>Test Button</Button>
-    <Alert variant="success">This is a button</Alert>
   </React.StrictMode>,
   document.getElementById("root")
 );

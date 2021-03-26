@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Edit(props) {
   return (
     <div>
-      <h1>Edit</h1>
+      <h1 className="text-center">Edit</h1>
       <Form>
       <h3>Personal Info</h3>
         <Form.Group controlId="fname">

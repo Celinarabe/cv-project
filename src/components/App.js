@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Preview from "./Preview";
 import Edit from "./Edit";
+import { Container, Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export class App extends Component {
   constructor(props) {
@@ -35,9 +37,17 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Edit {...this.state} onChange={e => (this.handleChange(e))} />
-        <Preview {...this.state} />
-        
+        <Container>
+          <h1 className="text-center">Resume Builder</h1>
+          <Row>
+            <Col>
+              <Edit {...this.state} onChange={(e) => this.handleChange(e)} />
+            </Col>
+            <Col>
+            <Preview {...this.state} />
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
