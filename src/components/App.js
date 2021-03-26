@@ -37,6 +37,7 @@ export class App extends Component {
       <div>
         <Edit {...this.state} onChange={e => (this.handleChange(e))} />
         <Preview {...this.state} />
+        
       </div>
     );
   }

@@ -3,7 +3,8 @@ function Preview(props) {
     <div>
     <h1>Preview</h1>
     <h3>{props.fname} {props.lname}</h3>
-    <p>{props.university} Expected graduation date: {props.graduationDate}</p>
+    <p><strong>{props.university}</strong> {props.graduationDate}</p>
+    <p><strong>{props.companyName}</strong> {props.role}</p>
     </div>
 
   )

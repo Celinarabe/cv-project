@@ -1,76 +1,54 @@
+import { Form } from 'react-bootstrap'
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
 function Edit(props) {
   return (
     <div>
       <h1>Edit</h1>
+      <Form>
       <h3>Personal Info</h3>
-      <form id="frm1" onSubmit="">
-        <div>
-          <label htmlFor="fname">First Name:</label>
-          <input
-            onChange={props.onChange}
-            name="fname"
-            // Set the react state as the input value for controlled component inputs
-            value={props.fname}
-            type="text"
-            id="fname"
-          ></input>
-        </div>
-        <label htmlFor="lname">Last Name:</label>
-        <input
-          onChange={props.onChange}
-          name="lname"
-          // Set the react state as the input value for controlled component inputs
-          value={props.lname}
-          type="text"
-          id="lname"
-        ></input>
-        <div>
-          <h3>Education Info</h3>
-          <div>
-            <label htmlFor="university">University/Higher Education:</label>
-            <input
-              onChange={props.onChange}
-              name="university"
-              // Set the react state as the input value for controlled component inputs
-              value={props.university}
-              type="text"
-              id="university"
-            ></input>
-          </div>
-          <label htmlFor="graduationDate">Graduation Date:</label>
-          <input
-            onChange={props.onChange}
-            name="graduationDate"
-            // Set the react state as the input value for controlled component inputs
-            value={props.graduationDate}
-            type="text"
-            id="graduationDate"
-          ></input>
-        </div>
-        <div>
-          <h3>Work Experience</h3>
-          <div>
-            <label htmlFor="companyName">Company:</label>
-            <input
-              onChange={props.onChange}
-              name="companyName"
-              // Set the react state as the input value for controlled component inputs
-              value={props.companyName}
-              type="text"
-              id="companyName"
-            ></input>
-          </div>
-          <label htmlFor="role">Role:</label>
-          <input
-            onChange={props.onChange}
-            name="role"
-            // Set the react state as the input value for controlled component inputs
-            value={props.role}
-            type="text"
-            id="role"
-          ></input>
-        </div>
-      </form>
+        <Form.Group controlId="fname">
+          <Form.Label>First Name</Form.Label>
+          <Form.Control name = "fname"onChange={props.onChange} type="text"/>
+        </Form.Group>
+
+        <Form.Group controlId="lname">
+          <Form.Label>Last Name</Form.Label>
+          <Form.Control name = "lname"onChange={props.onChange} type="text"/>
+        </Form.Group>
+        <h3>Education Info</h3>
+
+        <Form.Group controlId="university">
+          <Form.Label>University</Form.Label>
+          <Form.Control name = "university"onChange={props.onChange} type="text"/>
+        </Form.Group>
+
+        <Form.Group controlId="graduationDate">
+          <Form.Label>Graduation Date</Form.Label>
+          <Form.Control name = "graduationDate"onChange={props.onChange} type="text"/>
+        </Form.Group>
+
+        <h3>Work Experience</h3>
+        <Form.Group controlId="companyName">
+          <Form.Label>Company Name</Form.Label>
+          <Form.Control name = "companyName"onChange={props.onChange} type="text"/>
+        </Form.Group>
+
+        <Form.Group controlId="role">
+          <Form.Label>Role</Form.Label>
+          <Form.Control name ="role" onChange={props.onChange} as="textarea"/>
+        </Form.Group>
+      </Form>
+
+
+
+      
+
+          
+          
+          
+          
     </div>
   );
 }
