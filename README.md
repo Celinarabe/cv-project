@@ -1,3 +1,5 @@
+Project created to practice using React props and state  
+Live Demo: https://celinarabe.github.io/cv-project/  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
