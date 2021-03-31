@@ -28,6 +28,7 @@ export class App extends Component {
     });
   }
 
+  //we're not even using this
   handleSubmit(event) {
     event.preventDefault();
     let name = event.target.title.value;

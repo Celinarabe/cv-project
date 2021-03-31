@@ -10,7 +10,7 @@ function Edit(props) {
       <h3>Personal Info</h3>
         <Form.Group controlId="fname">
           <Form.Label>First Name</Form.Label>
-          <Form.Control name = "fname"onChange={props.onChange} type="text"/>
+          <Form.Control name = "fname"onChange={props.onChange} type="text" value={props.fname}/>
         </Form.Group>
 
         <Form.Group controlId="lname">

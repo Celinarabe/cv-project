@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/App";
+import Appfunc from "./components/Appfunc";
 
 //import Button from "react-bootstrap/Button";
 import { Button, Alert, Breadcrumb, Card } from 'react-bootstrap'
@@ -11,7 +12,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Appfunc />
   </React.StrictMode>,
   document.getElementById("root")
 );
